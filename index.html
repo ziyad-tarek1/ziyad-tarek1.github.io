@@ -32,12 +32,10 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            animation: fadeInUp 1s ease-out;
         }
 
         header p {
             font-size: 1.2em;
-            animation: fadeInUp 1.5s ease-out;
         }
 
         /* Section Styles */
@@ -48,14 +46,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             background: #fff;
-            transition: opacity 0.6s ease, transform 0.6s ease;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
 
         section h2 {
@@ -113,18 +103,6 @@
             position: relative;
         }
 
-        /* Animation Styles */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         /* Media Queries */
         @media screen and (max-width: 768px) {
             .container .column {
@@ -144,12 +122,12 @@
         </p>
     </header>
 
-    <section class="fade-up">
+    <section>
         <h2>Summary</h2>
         <p>Results-driven DevOps Engineer with expertise in automating and streamlining development processes. Skilled in CI/CD, cloud infrastructure, and container orchestration, with a focus on creating scalable, secure systems. Actively seeking opportunities to apply my skills in dynamic and fast-paced environments.</p>
     </section>
 
-    <section class="fade-up">
+    <section>
         <h2>Education</h2>
         <div class="container">
             <div class="column">
@@ -165,7 +143,7 @@
         </div>
     </section>
 
-    <section class="fade-up">
+    <section>
         <h2>Work Experience</h2>
         <div class="container">
             <div class="column">
@@ -188,7 +166,7 @@
         </div>
     </section>
 
-    <section class="fade-up">
+    <section>
         <h2>Technical Skills</h2>
         <ul>
             <li><strong>DevOps & Automation:</strong> CI/CD (Jenkins, ArgoCD), Docker, Kubernetes, Helm, Terraform, Ansible, Git</li>
@@ -201,7 +179,7 @@
         </ul>
     </section>
 
-    <section class="fade-up">
+    <section>
         <h2>Projects</h2>
         <ul>
             <li><strong>Optimizing 5G Signal Distribution with IP Wave Software</strong>
@@ -228,23 +206,5 @@
     <footer>
         <p>© 2024 Ziyad Tarek Saeed | Let's Connect on <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/">LinkedIn</a></p>
     </footer>
-
-    <script>
-        // JavaScript to add the "visible" class to sections when they come into view
-        document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('section.fade-up');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.2 });
-
-            sections.forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
 </body>
 </html>
