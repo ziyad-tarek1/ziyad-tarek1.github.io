@@ -49,7 +49,14 @@
             margin: 20px auto;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         section:hover {
@@ -132,19 +139,19 @@
         </p>
     </header>
 
-    <section>
+    <section class="fade-up">
         <h2>Summary</h2>
         <p>Results-driven DevOps Engineer with expertise in automating and streamlining development processes. Skilled in CI/CD, cloud infrastructure, and container orchestration, with a focus on creating scalable, secure systems. Actively seeking opportunities to apply my skills in dynamic and fast-paced environments.</p>
     </section>
 
-    <section>
+    <section class="fade-up">
         <h2>Education</h2>
         <div class="container">
             <div class="column">
                 <h3>Bachelor's Degree in Communications and Electronics Engineering</h3>
                 <p>Alexandria University (2017 - 2022)</p>
                 <p><strong>Graduation Project:</strong> Networks Automation Solutions</p>
-                <ul class="projects-list slide-up">
+                <ul class="projects-list">
                     <li>Implemented SD-WAN topology with a 3-node cluster, reducing latency by 80%.</li>
                     <li>Deployed networking protocols to enhance network reliability and security.</li>
                     <li>Focused on SDN and SD-WAN to optimize performance and scalability.</li>
@@ -153,7 +160,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="fade-up">
         <h2>Work Experience</h2>
         <div class="container">
             <div class="column">
@@ -176,43 +183,62 @@
         </div>
     </section>
 
-    <section>
+    <section class="fade-up">
         <h2>Technical Skills</h2>
         <ul>
-            <li><strong>DevOps & Automation:</strong> CI/CD (Jenkins, ArgoCD), Docker, Kubernetes, Terraform, Bash</li>
-            <li><strong>Cloud Platforms:</strong> AWS, Ansible</li>
-            <li><strong>Networking:</strong> CCNA, CCNP, VPN, Firewall Configuration</li>
+            <li><strong>DevOps & Automation:</strong> CI/CD (Jenkins, ArgoCD), Docker, Kubernetes, Helm, Terraform, Ansible and GIT</li>
+            <li><strong>Cloud Platforms:</strong> AWS</li>
+            <li><strong>Networking:</strong> CCNA, CCNP, SD-Wan, SDN, VPN, Firewall Configuration, Troubleshooting methodologies, network analysis and debugging tools</li>
+            <li><strong>System Administration:</strong> Red Hat Linux (Admin I & Admin II), Windows Server (MCSA), Active Directory, Task Automation using Bash shell Scripting</li>
             <li><strong>Programming Languages:</strong> Python, Go</li>
-            <li><strong>Monitoring & Security:</strong> Prometheus, Grafana, SonarQube</li>
+            <li><strong>Monitoring & Security:</strong> Prometheus, Grafana, DataDog, SonarQube, and Trivy</li>
             <li><strong>Microsoft Office:</strong> Excel (Data Analysis, Pivot Tables), PowerPoint (Presentations), Word (Documentation)</li>
         </ul>
     </section>
 
-    <section>
-        <section>
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Optimizing 5G Signal Distribution with IP Wave Software</strong>
-            <ul>
-                <li>Utilized network signal data and IP Wave software to optimize indoor and outdoor 5G signal distribution, improving coverage by 25%.</li>
-                <li>Conducted comprehensive signal analysis and successfully balanced performance with health regulations.</li>
-            </ul>
-        </li>
-        <li><strong>Automated GitOps Web Application Deployment</strong>
-            <ul>
-                <li>Deployed a static web application using Jenkins (CI) and ArgoCD (CD) in a GitOps workflow, automating the entire process.</li>
-                <li>Achieved a 40% reduction in deployment time and ensured consistent, repeatable builds across environments.</li>
-            </ul>
-        </li>
-        <li><strong>Flappy Bird Game Kubernetes Deployment</strong>
-            <ul>
-                <li>Containerized and deployed the Flappy Bird game using Docker and Kubernetes with Helm charts, automating CI/CD with Jenkins.</li>
-                <li>Implemented ArgoCD for automated deployments, significantly reducing manual intervention and errors.</li>
-            </ul>
-        </li>
-    </ul>
-</section>
+    <section class="fade-up">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Optimizing 5G Signal Distribution with IP Wave Software</strong>
+                <ul>
+                    <li>Utilized network signal data and IP Wave software to optimize indoor and outdoor 5G signal distribution, improving coverage by 25%.</li>
+                    <li>Conducted comprehensive signal analysis and successfully balanced performance with health regulations.</li>
+                </ul>
+            </li>
+            <li><strong>Automated GitOps Web Application Deployment</strong>
+                <ul>
+                    <li>Deployed a static web application using Jenkins (CI) and ArgoCD (CD) in a GitOps workflow, automating the entire process.</li>
+                    <li>Achieved a 40% reduction in deployment time and ensured consistent, repeatable builds across environments.</li>
+                </ul>
+            </li>
+            <li><strong>Flappy Bird Game Kubernetes Deployment</strong>
+                <ul>
+                    <li>Containerized and deployed the Flappy Bird game using Docker and Kubernetes with Helm charts, automating CI/CD with Jenkins.</li>
+                    <li>Implemented ArgoCD for automated deployments, significantly reducing manual intervention and errors.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
-<footer>
-    <p>© 2024 Ziyad Tarek Saeed | Let's Connect on <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/">LinkedIn</a></p>
-</footer>
+    <footer>
+        <p>© 2024 Ziyad Tarek Saeed | Let's Connect on <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/">LinkedIn</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to add the "visible" class to sections when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('section.fade-up');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            });
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
