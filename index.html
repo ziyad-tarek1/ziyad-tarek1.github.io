@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -79,13 +80,6 @@
             margin-bottom: 5px;
         }
 
-        section:hover {
-            color: #283149;
-            border-bottom: 2px solid #FF6F61;
-            padding-bottom: 5px;
-            margin: 10px 0;
-        }
-
         /* Container Styles */
         .container {
             display: flex;
@@ -103,8 +97,16 @@
             transition: color 0.3s ease;
         }
 
+        a:visited {
+            color: #FF6F61;
+        }
+
         a:hover {
             color: #283149;
+        }
+
+        a:active {
+            color: red; /* Color change to red when clicked */
         }
 
         /* Footer Styles */
