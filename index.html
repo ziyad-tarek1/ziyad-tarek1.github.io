@@ -3,339 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ziyad Tarek Saeed | DevOps Engineer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Ziad Tarek Saeed - DevOps Engineer</title>
+    <!-- Include Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Global Styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
-            line-height: 1.6;
-            animation: fadeIn 2s ease-out;
-            padding: 0 20px;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Header Styles */
-        header {
-            background: #283149;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        header h2 {
-            margin: 10px 0;
-            font-size: 1.8em;
-        }
-
-        header p {
-            font-size: 1.2em;
-        }
-
-        header .contact-info {
-            margin-top: 10px;
-        }
-
-        header .contact-info i {
-            margin-right: 8px;
-        }
-
-        header a {
-            color: #FF6F61;
-            transition: color 0.3s ease;
-            text-decoration: none;
-        }
-
-        header a:visited {
-            color: #FF6F61;
-        }
-
-        header a:hover {
-            color: #000; /* Change to black on hover */
-            text-decoration: underline;
-        }
-
-        header a:active {
-            color: red; /* Color change to red when clicked */
-        }
-
-        /* Section Styles */
-        section {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            background: #fff;
-            transition: transform 0.3s ease;
-        }
-
-        section:hover {
-            transform: scale(1.02);
-        }
-
-        section h2 {
-            margin-bottom: 10px;
-            font-size: 1.8em;
-        }
-
-        section p {
-            margin-bottom: 10px;
-        }
-
-        section ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-
-        section li {
-            margin-bottom: 5px;
-        }
-
-        /* Footer Styles */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #283149;
-            color: #fff;
-            position: relative;
-        }
-
-        footer a {
-            color: #FF6F61;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #000;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            body {
-                padding: 0 10px;
-            }
-
-            section {
-                padding: 15px;
-            }
-
-            header h1 {
-                font-size: 2em;
-            }
-
-            header h2 {
-                font-size: 1.5em;
-            }
-
-            header p {
-                font-size: 1em;
-            }
-
-            section h2 {
-                font-size: 1.5em;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Ziyad Tarek Saeed</h1>
-        <h2>DevOps Engineer</h2>
-        <p class="contact-info">
-            <i class="fas fa-map-marker-alt"></i> Alexandria, Egypt (Relocatable) | 
-            <i class="fas fa-phone"></i> +201120364754 | 
-            <i class="fas fa-shield-alt"></i> Military Service: Completed
-        </p>
-        <p>
-            <a href="mailto:ziyadtarek180@gmail.com">ziyadtarek180@gmail.com</a> |
-            <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/">LinkedIn</a> |
-            <a href="https://github.com/ziyad-tarek1">GitHub</a>
-        </p>
+        <h1>Ziad Tarek Saeed</h1>
+        <p>DevOps Engineer</p>
+        <div class="contact-info">
+            <a href="mailto:ziyadtarek180@gmail.com"><i class="fas fa-envelope"></i> ziyadtarek180@gmail.com</a>
+            <a href="tel:+201120364754"><i class="fas fa-phone"></i> [+20 112 036 4754]</a>
+            <a href="https://github.com/ziyad-tarek1" target="_blank"><i class="fab fa-github"></i> ziyad-tarek1</a>
+            <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/" target="_blank"><i class="fab fa-linkedin"></i> Ziyad Tarek</a>
+            <span><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt (Relocatable)</span>
+            <span><i class="fas fa-user-shield"></i> Military Service: Completed</span>
+        </div>
     </header>
 
-    <section>
-        <h2>Summary</h2>
-        <p>Results-driven DevOps Engineer with expertise in automating and streamlining development processes. Skilled in CI/CD, cloud infrastructure, and container orchestration, with a focus on creating scalable, secure systems. Actively seeking opportunities to apply my skills in dynamic and fast-paced environments.</p>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#profile-summary">Profile Summary</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#internships-training">Internships & Training</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#technical-knowledge">Technical Knowledge</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#extracurricular-activities">Extracurricular Activities</a></li>
+            <li><a href="#languages">Languages</a></li>
+        </ul>
+    </nav>
 
-    <section>
-        <h2>Education</h2>
-        <div class="container">
-            <div class="column">
-                <h3>Bachelor's Degree in Communications and Electronics Engineering</h3>
-                <p>Alexandria University (2017 - 2022)</p>
-                <p><strong>Graduation Project:</strong> Networks Automation Solutions</p>
+    <div id="main-content">
+        <section id="profile-summary">
+            <h2>Profile Summary</h2>
+            <p>Critical thinking DevOps Engineer with extensive understanding of high availability architecture and concepts. Purpose-driven professional with capacity to be strong team player plus work effectively independently.</p>
+        </section>
+
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <div class="job-header">
+                    <h3>IT Technical Deskside Support</h3>
+                    <span class="location">Alexandria, EG</span>
+                </div>
+                <div class="job-header">
+                    <p>Sutherland Global Services</p>
+                    <span class="dates">Aug 2022–OCT 2024</span>
+                </div>
                 <ul>
-                    <li>Implemented SD-WAN topology with a 3-node cluster, reducing latency by 20%.</li>
-                    <li>Deployed networking protocols to enhance network reliability and security, achieving 99.9% uptime.</li>
-                    <li>Focused on SDN and SD-WAN to optimize performance and scalability, supporting 50+ active users.</li>
+                    <li>Troubleshot technical issues and provided on-site technical support.</li>
+                    <li>Provided technical support for end-users and resolved escalated technical issues.</li>
+                    <li>Automated routine system administration tasks to reduce manual effort.</li>
                 </ul>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Work Experience</h2>
-        <div class="container">
-            <div class="column">
-                <h3>IT Deskside Support</h3>
-                <p>Sutherland Global Services | August 2022 - Present</p>
+            <div class="job">
+                <div class="job-header">
+                    <h3>Outsourced IT Technical Support Help Desk</h3>
+                    <span class="location">Cairo, EG</span>
+                </div>
+                <div class="job-header">
+                    <p>EgyProTech Company (Outsourced to SEDTCO)</p>
+                    <span class="dates">Sep 2022–Apr 2023</span>
+                </div>
                 <ul>
-                    <li>Delivered technical support to 100+ agents, achieving a 95% first-call resolution rate.</li>
-                    <li>Ensured minimal disruption to business operations by resolving escalated IT issues within an average of 30 minutes.</li>
-                    <li>Documented solutions in the knowledge base, reducing troubleshooting time by 25%.</li>
+                    <li>Delivered dedicated IT support to SEDTCO's management, ensuring seamless operation of key systems.</li>
+                    <li>Resolved hardware, software, and network issues to minimize downtime and enhance productivity.</li>
                 </ul>
             </div>
-            <div class="column">
-                <h3>Outsourced IT Technical Support Help Desk</h3>
-                <p>Egyprotech Company | September 2022 - April 2023</p>
-                <ul>
-                    <li>Provided IT support to executive management, ensuring 100% uptime for critical systems.</li>
-                    <li>Increased productivity through minimizing system downtime by implementing proactive maintenance strategies.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Professional Training</h2>
-        <div class="container">
-            <div class="column">
-                <h3>SDN & SD-WAN Training Participant</h3>
-                <p>Orange | 02/2022</p>
-                <p>Completed a specialized training program with Orange in Software-Defined Networking (SDN) and Software-Defined Wide Area Networking (SD-WAN).</p>
-            </div>
-        </div>
-    </section>
+        <section id="internships-training">
+            <h2>Internships & Training</h2>
+            <p>Orange Business Company Online</p>
+            <p>SDN and SD-WAN (Cisco Viptela) Technology | Feb 2022–Feb 2022</p>
+        </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <div class="container">
+        <section id="education">
+            <h2>Education</h2>
+            <p>Faculty of Engineering, Alexandria University, Alexandria, EG</p>
+            <p>Bachelor’s Degree in Electrical Engineering | Sep 2017–Jun 2022</p>
+            <p>Department: Communications & Electronics | Grade: Good</p>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <p>EX200 Red Hat Certified System Administrator (RHCSA)</p>
+            <p>Technologies Used: Red Hat Enterprise Linux 9</p>
+            <p>Validation: Oct 8, 2024 to Oct 8, 2027 | Certification ID: 240-202-713</p>
+        </section>
+
+        <section id="technical-knowledge">
+            <h2>Technical Knowledge</h2>
             <h3>DevOps</h3>
-            <ul>
-                <li>Automating system management using Ansible</li>
-                <li>Implementing container engine with Docker and Kubernetes</li>
-                <li>Configuring AWS</li>
-                <li>Task automation with Bash</li>
-                <li>CI/CD with Jenkins and ArgoCD</li>
-                <li>Version Control with Git</li>
-                <li>Infrastructure as Code with Terraform</li>
-                <li>Monitoring with Prometheus</li>
-                <li>Analytics with Grafana/DataDog</li>
-                <li>Code quality and security with SonarQube</li>
-                <li>Agile methodologies</li>
-            </ul>
+            <p>Ansible, Docker, Kubernetes, Jenkins, AWS, Terraform, ArgoCD, Prometheus, Grafana, Git, Agile</p>
             <h3>System Administration</h3>
-            <ul>
-                <li>Installing and configuring Red Hat Linux Servers</li>
-                <li>Installing and configuring Microsoft Windows Servers</li>
-                <li>Administrating web servers with Apache and Nginx</li>
-                <li>Basic Virtualization Technology</li>
-                <li>Microsoft Windows Infrastructure (Active Directory, Group Policy, DHCP, DNS)</li>
-                <li>Task Automation using Bash</li>
-            </ul>
-            <h3>Network Engineering</h3>
-            <ul>
-                <li>Network Architecture and Design (CCNA, CCNP)</li>
-                <li>Network Security (Firewall, VPN, ACLs, segmentation)</li>
-                <li>Network Troubleshooting</li>
-            </ul>
-            <h3>Programming Skills</h3>
-            <ul>
-                <li>Knowledge of Python and Golang</li>
-            </ul>
-        </div>
-    </section>
+            <p>Linux Administration I & II, Bash Scripting, VMware and vSphere, Windows servers (MCSA), Apache and Nginx</p>
+            <h3>Network & IT Skills</h3>
+            <p>CCNA 200-301, CCNP Encore 350-401 MPLS and BGP, SDN and SD-WAN, Network Security, Python for Network</p>
+        </section>
 
-    <section>
-        <h2>Soft Skills</h2>
-        <div class="container">
-            <ul>
-                <li>Adaptability</li>
-                <li>Teamwork</li>
-                <li>Verbal and Written Communication Skills</li>
-                <li>Time Management</li>
-                <li>Interpersonal Skills</li>
-            </ul>
-        </div>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ol>
+                <li>
+                    <h3>Three Tier Application Deployment using AWS, Kubernetes, and Jenkins</h3>
+                    <p>Overview: Containerized a three-tier app (React.js frontend, Node.js backend, MongoDB database) and deployed on Amazon EKS.</p>
+                    <ul>
+                        <li>Automated CI/CD pipeline with Jenkins for building, testing, and deploying images.</li>
+                        <li>Integrated AWS ECR for image storage, Kubernetes Ingress, and Load Balancer for traffic management.</li>
+                        <li>Set up Slack notifications for deployment success.</li>
+                    </ul>
+                    <p>Technologies: Docker, AWS EKS, Jenkins, Helm, Slack</p>
+                </li>
+                <li>
+                    <h3>YouTube Video & Playlist Downloader</h3>
+                    <p>Flask-based web app allowing video downloads via pytube, with Flask for backend processing and Docker for deployment.</p>
+                    <p>Technologies: Flask, Docker, HTML, CSS</p>
+                </li>
+                <li>
+                    <h3>Automated CI/CD Pipeline for Dinosaur Game</h3>
+                    <p>Configured an automated Jenkins pipeline for a containerized game deployment.</p>
+                    <ul>
+                        <li>Integrated SonarQube for code quality, Trivy for security scans, and deployed to Kubernetes using ArgoCD.</li>
+                    </ul>
+                    <p>Technologies: Jenkins, SonarQube, Trivy, ArgoCD, Docker, Kubernetes</p>
+                </li>
+                <li>
+                    <h3>MongoDB and Mongo-Express on Kubernetes</h3>
+                    <p>Deployed MongoDB and Mongo-Express on Kubernetes with PV, PVC, Secrets, and ConfigMaps for persistence and configuration management.</p>
+                    <p>Integrated Prometheus and Grafana for monitoring via Helm.</p>
+                    <p>Technologies: Kubernetes, Prometheus, Grafana, Helm, Docker</p>
+                </li>
+                <li>
+                    <h3>Networks Evolution (SDN & SD-WAN Technology) || Graduation Project</h3>
+                    <p>Studying specific networks evolution starting from CLI, scripting, automation to software-defined network (SDN) and software wide area network (SDWAN) technologies.</p>
+                    <p>SDN simulation using Mininet and controllers (ODL, ONOS, HPE van).</p>
+                    <p>Full SD-WAN simulation using GNS3 and EVE-ENG for Cisco Viptela solution.</p>
+                </li>
+            </ol>
+        </section>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="container">
-            <div class="column">
-                <h3>Flappy Bird Game</h3>
-                <p>Deployed a Flappy Bird game using Kubernetes and Helm, managing scaling and updates.</p>
-            </div>
-            <div class="column">
-                <h3>MERN-Stack Application</h3>
-                <p>Created a simple web application using React, Node.js, and MongoDB, deployed on Kubernetes.</p>
-            </div>
-            <div class="column">
-                <h3>YouTube Video Downloader</h3>
-                <p>Built a Flask application for downloading YouTube videos and playlists, containerized with Docker.</p>
-            </div>
-            <div class="column">
-                <h3>CSV Data Collection System</h3>
-                <p>Developed a system for collecting and displaying CSV data using MongoDB, Nginx, and Fedora VMs.</p>
-            </div>
-        </div>
-    </section>
+        <section id="extracurricular-activities">
+            <h2>Extracurricular Activities</h2>
+            <h3>Head of Academic Committee, EED Society</h3>
+            <p>Skills: Leadership, Work Under Stress, Team Work, Flexibility, Fast Learning, Hard Worker</p>
+            <h3>Head of Public Relations Committee, Safwa Engineering</h3>
+            <p>Skills: Problem Solving, Conflict Resolution, Flexibility</p>
+        </section>
 
-    <section>
-        <h2>Languages</h2>
-        <div class="container">
-            <ul>
-                <li>Arabic (Native)</li>
-                <li>English (Very Good)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Volunteering Experience</h2>
-        <div class="container">
-            <div class="column">
-                <h3>Head of Academic Committee</h3>
-                <p>EED - Electrical Engineering Department | 2019 – 2021</p>
-            </div>
-            <div class="column">
-                <h3>Head of Public Relations Committee</h3>
-                <p>Safwa Engineering | 2019 – 2020</p>
-            </div>
-            <div class="column">
-                <h3>Vice-Head of Organization Committee</h3>
-                <p>Social Leaders | 2018 – 2019</p>
-            </div>
-        </div>
-    </section>
+        <section id="languages">
+            <h2>Languages</h2>
+            <p>Arabic (Native), English (Very Good)</p>
+        </section>
+    </div>
 
     <footer>
+        <a href="Ziad_Tarek_Saeed_CV.pdf" download><i class="fas fa-download"></i> Download PDF Version</a>
         <p>&copy; 2024 Ziyad Tarek Saeed. All rights reserved. | <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/">LinkedIn</a> | <a href="https://github.com/ziyad-tarek1">GitHub</a></p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
