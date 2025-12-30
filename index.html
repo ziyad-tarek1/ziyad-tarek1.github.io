@@ -3,169 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ziad Tarek Saeed - DevOps Engineer</title>
-    <!-- Include Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Ziyad Tarek Saeed - DevOps Engineer & SRE with expertise in AWS, Kubernetes, Terraform, and CI/CD automation">
+    <meta name="keywords" content="DevOps, SRE, AWS, Kubernetes, Docker, Terraform, CI/CD, Helm, ArgoCD, GitHub Actions">
+    <title>Ziyad Tarek Saeed - DevOps Engineer | SRE</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <h1>Ziad Tarek Saeed</h1>
-        <p>DevOps Engineer</p>
-        <div class="contact-info">
-            <a href="mailto:ziyadtarek180@gmail.com"><i class="fas fa-envelope"></i> ziyadtarek180@gmail.com</a>
-            <a href="tel:+201120364754"><i class="fas fa-phone"></i> [+20 112 036 4754]</a>
-            <a href="https://github.com/ziyad-tarek1" target="_blank"><i class="fab fa-github"></i> ziyad-tarek1</a>
-            <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/" target="_blank"><i class="fab fa-linkedin"></i> Ziyad Tarek</a>
-            <span><i class="fas fa-map-marker-alt"></i> Alexandria, Egypt (Relocatable)</span>
-            <span><i class="fas fa-user-shield"></i> Military Service: Completed</span>
+    <header class="header">
+        <div class="container">
+            <h1>Ziyad Tarek Saeed</h1>
+            <p class="subtitle">DevOps Engineer | SRE</p>
+            <div class="contact-info">
+                <a href="mailto:ziyadtarek180@gmail.com">ziyadtarek180@gmail.com</a>
+                <span class="separator">|</span>
+                <a href="tel:+201120364754">+201120364754</a>
+                <span class="separator">|</span>
+                <span>Cairo, Egypt (Relocatable)</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ziyad-tarek180/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/ziyad-tarek1" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.credly.com/users/ziad-tarek.180" target="_blank" rel="noopener">Certifications</a>
+            </div>
+            <button class="download-btn" onclick="window.open('README.md', '_blank')">Download CV (Markdown)</button>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#profile-summary">Profile Summary</a></li>
-            <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#internships-training">Internships & Training</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#technical-knowledge">Technical Knowledge</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#extracurricular-activities">Extracurricular Activities</a></li>
-            <li><a href="#languages">Languages</a></li>
-        </ul>
-    </nav>
-
-    <div id="main-content">
-        <section id="profile-summary">
-            <h2>Profile Summary</h2>
-            <p>Critical thinking DevOps Engineer with extensive understanding of high availability architecture and concepts. Purpose-driven professional with capacity to be strong team player plus work effectively independently.</p>
+    <main class="container">
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>DevOps Engineer with 1+ years of hands-on experience building and optimizing cloud-native infrastructure on AWS. Proven track record in reducing infrastructure costs by 35% and CI/CD expenses by 60% through strategic automation and resource optimization. Experienced in designing disaster recovery solutions, implementing GitOps workflows, and managing production Kubernetes clusters. Hold multiple industry certifications including CKA, CKAD, KCSA, KCNA, Terraform Associate, and AWS Cloud Practitioner.</p>
         </section>
 
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <div class="job">
+        <section class="experience">
+            <h2>Professional Experience</h2>
+            
+            <article class="job">
                 <div class="job-header">
-                    <h3>IT Technical Deskside Support</h3>
-                    <span class="location">Alexandria, EG</span>
+                    <h3>SRE/DevOps Engineer</h3>
+                    <span class="company">Rabbit Mart</span>
                 </div>
+                <p class="job-meta">April 2025 - Present | Cairo, Egypt</p>
+                
+                <div class="job-category">
+                    <h4>Infrastructure & Cost Optimization</h4>
+                    <ul>
+                        <li>Reduced infrastructure costs by 35% by implementing Kubecost monitoring, Horizontal Pod Autoscaling (HPA), and Vertical Pod Autoscaling (VPA)</li>
+                        <li>Optimized Kubernetes autoscaling with Karpenter, improving resource utilization by 40%</li>
+                        <li>Cut CI/CD costs by 60% through migration to self-hosted GitHub Actions runners</li>
+                    </ul>
+                </div>
+
+                <div class="job-category">
+                    <h4>CI/CD & Automation</h4>
+                    <ul>
+                        <li>Built and maintained CI/CD pipelines using GitHub Actions, Docker, Kubernetes, Helm, and Terraform</li>
+                        <li>Migrated legacy AWS resources to Terraform-managed infrastructure for improved consistency and disaster recovery capabilities</li>
+                        <li>Automated deployment workflows reducing manual intervention and deployment time</li>
+                    </ul>
+                </div>
+
+                <div class="job-category">
+                    <h4>Database Management & Performance</h4>
+                    <ul>
+                        <li>Administered RDS MySQL and PostgreSQL databases including user management, schema creation, and replication configuration</li>
+                        <li>Optimized database performance through query tuning and resource allocation</li>
+                        <li>Implemented automated backup strategies and cross-region replication for business continuity</li>
+                    </ul>
+                </div>
+
+                <div class="job-category">
+                    <h4>Container Orchestration & Infrastructure</h4>
+                    <ul>
+                        <li>Designed and deployed production-ready Helm charts for Redis, MySQL, PostgreSQL, and other self-hosted tools</li>
+                        <li>Created disaster recovery plan for EKS clusters using Velero with automated backup and restore procedures</li>
+                        <li>Managed multi-cluster Kubernetes environments with focus on high availability</li>
+                    </ul>
+                </div>
+
+                <div class="job-category">
+                    <h4>AI/ML & Data Engineering</h4>
+                    <ul>
+                        <li>Deployed Vertex AI jobs to collect data from BigQuery and store in MySQL RDS for analytics pipelines</li>
+                        <li>Built and deployed chatbot agent with integrated Langfuse monitoring for performance tracking and optimization</li>
+                    </ul>
+                </div>
+
+                <div class="job-category">
+                    <h4>Security & Secrets Management</h4>
+                    <ul>
+                        <li>Deployed HashiCorp Vault for centralized secret management with automated rotation policies</li>
+                        <li>Migrated WAF logs to Elasticsearch and Kibana for centralized security monitoring and threat analysis</li>
+                        <li>Implemented security best practices across infrastructure components</li>
+                    </ul>
+                </div>
+
+                <div class="job-category">
+                    <h4>Observability & Monitoring</h4>
+                    <ul>
+                        <li>Deployed EFK stack (Elasticsearch, Fluentd, Kibana) and Loki for centralized logging</li>
+                        <li>Integrated DataDog for comprehensive observability including dashboards, alerts, and APM monitoring</li>
+                        <li>Built monitoring solutions to track application performance and infrastructure health</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="job">
                 <div class="job-header">
-                    <p>Sutherland Global Services</p>
-                    <span class="dates">Aug 2022–OCT 2024</span>
+                    <h3>System Administrator</h3>
+                    <span class="company">Sutherland Global Services</span>
                 </div>
+                <p class="job-meta">June 2024 - September 2024 | Alexandria, Egypt</p>
                 <ul>
-                    <li>Troubleshot technical issues and provided on-site technical support.</li>
-                    <li>Provided technical support for end-users and resolved escalated technical issues.</li>
-                    <li>Automated routine system administration tasks to reduce manual effort.</li>
+                    <li>Provided technical support for 200+ end-users, resolving hardware, software, and network issues with 95% first-contact resolution rate</li>
+                    <li>Automated routine system administration tasks using Bash and Python scripts, reducing manual effort by 30%</li>
+                    <li>Collaborated with global IT teams to optimize production environments and ensure system stability across multiple time zones</li>
+                    <li>Contributed to monthly IT audit reports ensuring compliance with security policies and company standards</li>
+                    <li>Documented troubleshooting procedures and solutions, improving team knowledge sharing and response time</li>
+                </ul>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>System Administrator Intern</h3>
+                    <span class="company">Sutherland Global Services</span>
+                </div>
+                <p class="job-meta">August 2022 - April 2023 | Alexandria, Egypt</p>
+            </article>
+
+            <article class="job">
+                <div class="job-header">
+                    <h3>Part-time System Administrator</h3>
+                    <span class="company">EgyProTech Company</span>
+                </div>
+                <p class="job-meta">September 2022 - April 2023 | Cairo, Egypt</p>
+                <ul>
+                    <li>Delivered dedicated IT support to SEDTCO's management team</li>
+                    <li>Maintained critical business systems with minimal downtime</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cloud & Infrastructure</h3>
+                    <p>AWS (EC2, EKS, RDS, VPC, IAM, Secrets Manager), GCP, Terraform, Infrastructure as Code</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Container & Orchestration</h3>
+                    <p>Kubernetes, Docker, Helm, Karpenter, EKS, OpenShift, Argo Rollouts</p>
+                </div>
+                <div class="skill-category">
+                    <h3>CI/CD & GitOps</h3>
+                    <p>GitHub Actions, Jenkins, GitLab CI, ArgoCD, Flagger, CircleCI</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Observability & Monitoring</h3>
+                    <p>Prometheus, Grafana, DataDog, EFK Stack, Loki, Kubecost</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Configuration Management</h3>
+                    <p>Ansible, Bash Scripting, Python Scripting</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Security & Secrets</h3>
+                    <p>HashiCorp Vault, AWS Secrets Manager</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>MySQL, PostgreSQL, Oracle, SQL, PL/SQL, RMAN</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Backup & DR</h3>
+                    <p>Velero, Cross-region Replication</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            
+            <div class="cert-category">
+                <h3>Kubernetes</h3>
+                <ul>
+                    <li><a href="https://www.credly.com/badges/26c42852-5b99-482d-9c1f-a50e05d768cb" target="_blank" rel="noopener">Certified Kubernetes Administrator (CKA)</a> - Linux Foundation (Dec 2024 - Dec 2026)</li>
+                    <li><a href="https://www.credly.com/badges/49026be1-5df0-466a-ac29-5637012fd796/public_url" target="_blank" rel="noopener">Certified Kubernetes Application Developer (CKAD)</a> - Linux Foundation (Dec 2025 - Dec 2027)</li>
+                    <li><a href="https://www.credly.com/badges/accdccaf-417a-4bd1-940e-fd7298d63df4/public_url" target="_blank" rel="noopener">Kubernetes and Cloud Native Security Associate (KCSA)</a> - Linux Foundation (Dec 2025 - Dec 2027)</li>
+                    <li><a href="https://www.credly.com/badges/947d8592-564d-4448-a516-39c56878c222/public_url" target="_blank" rel="noopener">Kubernetes and Cloud Native Associate (KCNA)</a> - Linux Foundation (Jan 2025 - Jan 2027)</li>
                 </ul>
             </div>
-            <div class="job">
-                <div class="job-header">
-                    <h3>Outsourced IT Technical Support Help Desk</h3>
-                    <span class="location">Cairo, EG</span>
-                </div>
-                <div class="job-header">
-                    <p>EgyProTech Company (Outsourced to SEDTCO)</p>
-                    <span class="dates">Sep 2022–Apr 2023</span>
-                </div>
+
+            <div class="cert-category">
+                <h3>Cloud & Infrastructure</h3>
                 <ul>
-                    <li>Delivered dedicated IT support to SEDTCO's management, ensuring seamless operation of key systems.</li>
-                    <li>Resolved hardware, software, and network issues to minimize downtime and enhance productivity.</li>
+                    <li><a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/708e3878bbe94fea862a0db0dd0201fc" target="_blank" rel="noopener">AWS Certified Cloud Practitioner (CLF-C02)</a> - Amazon Web Services (Dec 2024 - Dec 2027)</li>
+                    <li><a href="https://www.credly.com/badges/686a9940-5a50-472c-abdb-dd8dc21580b1/public_url" target="_blank" rel="noopener">HashiCorp Certified: Terraform Associate (003)</a> - HashiCorp (Feb 2025 - Feb 2027)</li>
+                    <li>Huawei Certified Cloud Developer Associate (HCCDA) - Huawei (Jan 2025 - Jan 2028)</li>
+                </ul>
+            </div>
+
+            <div class="cert-category">
+                <h3>System Administration</h3>
+                <ul>
+                    <li><a href="https://rhtapps.redhat.com/verify?certId=240-202-713" target="_blank" rel="noopener">Red Hat Certified System Administrator (RHCSA)</a> - Red Hat (Oct 2024 - Oct 2027)</li>
+                </ul>
+            </div>
+
+            <div class="cert-category">
+                <h3>Development & Collaboration</h3>
+                <ul>
+                    <li><a href="https://www.credly.com/badges/63a14aeb-2e00-45ae-a1eb-84ff313f103b" target="_blank" rel="noopener">GitHub Foundations</a> - GitHub (Oct 2024 - Oct 2027)</li>
                 </ul>
             </div>
         </section>
 
-        <section id="internships-training">
-            <h2>Internships & Training</h2>
-            <p>Orange Business Company Online</p>
-            <p>SDN and SD-WAN (Cisco Viptela) Technology | Feb 2022–Feb 2022</p>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p>Faculty of Engineering, Alexandria University, Alexandria, EG</p>
-            <p>Bachelor’s Degree in Electrical Engineering | Sep 2017–Jun 2022</p>
-            <p>Department: Communications & Electronics | Grade: Good</p>
-        </section>
-
-        <section id="certificates">
-            <h2>Certificates</h2>
-            <p>EX200 Red Hat Certified System Administrator (RHCSA)</p>
-            <p>Technologies Used: Red Hat Enterprise Linux 9</p>
-            <p>Validation: Oct 8, 2024 to Oct 8, 2027 | Certification ID: 240-202-713</p>
-        </section>
-
-        <section id="technical-knowledge">
-            <h2>Technical Knowledge</h2>
-            <h3>DevOps</h3>
-            <p>Ansible, Docker, Kubernetes, Jenkins, AWS, Terraform, ArgoCD, Prometheus, Grafana, Git, Agile</p>
-            <h3>System Administration</h3>
-            <p>Linux Administration I & II, Bash Scripting, VMware and vSphere, Windows servers (MCSA), Apache and Nginx</p>
-            <h3>Network & IT Skills</h3>
-            <p>CCNA 200-301, CCNP Encore 350-401 MPLS and BGP, SDN and SD-WAN, Network Security, Python for Network</p>
-        </section>
-
-        <section id="projects">
+        <section class="projects">
             <h2>Projects</h2>
-            <ol>
-                <li>
-                    <h3>Three Tier Application Deployment using AWS, Kubernetes, and Jenkins</h3>
-                    <p>Overview: Containerized a three-tier app (React.js frontend, Node.js backend, MongoDB database) and deployed on Amazon EKS.</p>
-                    <ul>
-                        <li>Automated CI/CD pipeline with Jenkins for building, testing, and deploying images.</li>
-                        <li>Integrated AWS ECR for image storage, Kubernetes Ingress, and Load Balancer for traffic management.</li>
-                        <li>Set up Slack notifications for deployment success.</li>
-                    </ul>
-                    <p>Technologies: Docker, AWS EKS, Jenkins, Helm, Slack</p>
-                </li>
-                <li>
-                    <h3>YouTube Video & Playlist Downloader</h3>
-                    <p>Flask-based web app allowing video downloads via pytube, with Flask for backend processing and Docker for deployment.</p>
-                    <p>Technologies: Flask, Docker, HTML, CSS</p>
-                </li>
-                <li>
-                    <h3>Automated CI/CD Pipeline for Dinosaur Game</h3>
-                    <p>Configured an automated Jenkins pipeline for a containerized game deployment.</p>
-                    <ul>
-                        <li>Integrated SonarQube for code quality, Trivy for security scans, and deployed to Kubernetes using ArgoCD.</li>
-                    </ul>
-                    <p>Technologies: Jenkins, SonarQube, Trivy, ArgoCD, Docker, Kubernetes</p>
-                </li>
-                <li>
-                    <h3>MongoDB and Mongo-Express on Kubernetes</h3>
-                    <p>Deployed MongoDB and Mongo-Express on Kubernetes with PV, PVC, Secrets, and ConfigMaps for persistence and configuration management.</p>
-                    <p>Integrated Prometheus and Grafana for monitoring via Helm.</p>
-                    <p>Technologies: Kubernetes, Prometheus, Grafana, Helm, Docker</p>
-                </li>
-                <li>
-                    <h3>Networks Evolution (SDN & SD-WAN Technology) || Graduation Project</h3>
-                    <p>Studying specific networks evolution starting from CLI, scripting, automation to software-defined network (SDN) and software wide area network (SDWAN) technologies.</p>
-                    <p>SDN simulation using Mininet and controllers (ODL, ONOS, HPE van).</p>
-                    <p>Full SD-WAN simulation using GNS3 and EVE-ENG for Cisco Viptela solution.</p>
-                </li>
-            </ol>
+            
+            <article class="project">
+                <h3>Automated AWS EKS Deployment with GitOps & CI/CD</h3>
+                <p class="project-date">March 2025</p>
+                <ul>
+                    <li>Automated AWS EKS infrastructure provisioning using Terraform with complete infrastructure as code</li>
+                    <li>Implemented GitOps workflows using ArgoCD for declarative application deployment</li>
+                    <li>Deployed self-hosted GitHub Actions runners to reduce CI/CD costs</li>
+                    <li>Integrated monitoring stack with Prometheus and Grafana for real-time observability</li>
+                </ul>
+                <p class="tech-stack"><strong>Technologies:</strong> AWS EKS, Terraform, GitHub Actions, ArgoCD, Prometheus, Grafana</p>
+            </article>
+
+            <article class="project">
+                <h3>CanaryCloud: Advanced Monitoring and Canary Deployments on AWS EKS</h3>
+                <p class="project-date">February 2025</p>
+                <ul>
+                    <li>Deployed scalable Python-based Todo application on AWS EKS with production-grade monitoring</li>
+                    <li>Implemented canary deployment strategy using Flagger for zero-downtime releases</li>
+                    <li>Built comprehensive observability solution using Prometheus, Grafana, and ELK stack</li>
+                    <li>Automated CI/CD pipelines using CircleCI and ArgoCD</li>
+                    <li>Integrated AWS Secrets Manager for secure environment variable management</li>
+                </ul>
+                <p class="tech-stack"><strong>Technologies:</strong> AWS EKS, Terraform, CircleCI, ArgoCD, Flagger, Prometheus, Grafana, ELK Stack, AWS Secrets Manager</p>
+            </article>
+
+            <article class="project">
+                <h3>End-to-End Kubernetes Three-Tier DevSecOps Pipeline</h3>
+                <p class="project-date">January 2025</p>
+                <ul>
+                    <li>Built automated DevSecOps pipeline using GitHub Actions and Terraform</li>
+                    <li>Provisioned AWS infrastructure including EKS cluster, bastion host, and monitoring add-ons</li>
+                    <li>Deployed three-tier application with blue-green deployment strategy using Argo Rollouts</li>
+                    <li>Integrated security scanning with Trivy and SonarQube for code quality and vulnerability detection</li>
+                    <li>Implemented Jenkins for continuous integration with automated testing</li>
+                </ul>
+                <p class="tech-stack"><strong>Technologies:</strong> AWS, EKS, Terraform, GitHub Actions, Jenkins, ArgoCD, Argo Rollouts, Trivy, SonarQube</p>
+            </article>
         </section>
 
-        <section id="extracurricular-activities">
-            <h2>Extracurricular Activities</h2>
-            <h3>Head of Academic Committee, EED Society</h3>
-            <p>Skills: Leadership, Work Under Stress, Team Work, Flexibility, Fast Learning, Hard Worker</p>
-            <h3>Head of Public Relations Committee, Safwa Engineering</h3>
-            <p>Skills: Problem Solving, Conflict Resolution, Flexibility</p>
+        <section class="education">
+            <h2>Education</h2>
+            
+            <article class="education-item">
+                <h3>Information Technology Institute (ITI-MCIT)</h3>
+                <p class="degree">System Administration Track - 9-month Intensive Program</p>
+                <p class="education-meta">October 2024 - July 2025 | Alexandria, Egypt</p>
+            </article>
+
+            <article class="education-item">
+                <h3>Alexandria University - Faculty of Engineering</h3>
+                <p class="degree">Bachelor's Degree in Electrical Engineering</p>
+                <p class="education-meta">2017 - 2022 | Alexandria, Egypt</p>
+                <p>Department: Communications & Electronics | Grade: Good</p>
+            </article>
+
+            <article class="education-item">
+                <h3>Additional Training</h3>
+                <ul>
+                    <li>Information Technology Institute (ITI-MCIT) - Professional Training (April 2022 - October 2022)</li>
+                    <li>MaharaTech-Pluralsight - 6-Month Online Programs</li>
+                </ul>
+            </article>
         </section>
 
-        <section id="languages">
-            <h2>Languages</h2>
-            <p>Arabic (Native), English (Very Good)</p>
+        <section class="attributes">
+            <h2>Professional Attributes</h2>
+            <div class="attributes-grid">
+                <div class="attribute">
+                    <h4>Problem-Solving</h4>
+                    <p>Analytical approach to complex infrastructure challenges with focus on long-term solutions</p>
+                </div>
+                <div class="attribute">
+                    <h4>Collaboration</h4>
+                    <p>Experienced working with cross-functional teams across different time zones</p>
+                </div>
+                <div class="attribute">
+                    <h4>Continuous Learning</h4>
+                    <p>Active pursuit of industry certifications and staying current with cloud-native technologies</p>
+                </div>
+                <div class="attribute">
+                    <h4>Leadership</h4>
+                    <p>Led cost optimization initiatives and infrastructure migration projects</p>
+                </div>
+                <div class="attribute">
+                    <h4>Adaptability</h4>
+                    <p>Quick to learn new technologies and adapt to changing project requirements</p>
+                </div>
+                <div class="attribute">
+                    <h4>Work Ethic</h4>
+                    <p>Consistently deliver results under pressure while maintaining high quality standards</p>
+                </div>
+            </div>
         </section>
-    </div>
+    </main>
 
-    <footer>
-        <a href="Ziad_Tarek_Saeed_CV.pdf" download><i class="fas fa-download"></i> Download PDF Version</a>
-        <p>&copy; 2024 Ziyad Tarek Saeed. All rights reserved. | <a href="https://www.linkedin.com/in/ziyad-tarek-61a38818b/">LinkedIn</a> | <a href="https://github.com/ziyad-tarek1">GitHub</a></p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ziyad Tarek Saeed | Military Service: Completed</p>
+            <p>
+                <a href="mailto:ziyadtarek180@gmail.com">Email</a> |
+                <a href="https://www.linkedin.com/in/ziyad-tarek180/" target="_blank" rel="noopener">LinkedIn</a> |
+                <a href="https://github.com/ziyad-tarek1" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
+
